@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R K Traders Electricals | Premium Electrical Solutions</title>
+    <!-- Tailwind CSS for modern, fluid styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter for clean text, Playfair Display for elegant headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    <!-- FontAwesome for high-quality, elegant icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        premiumNavy: '#0a192f',
+                        premiumGold: '#d4af37',
+                        goldHover: '#aa8c2c',
+                        softGray: '#f8f9fa'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .gold-gradient {
+            background: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #aa8c2c 100%);
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-gray-800 antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-premiumNavy text-white shadow-md border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="#" class="font-serif text-2xl lg:text-3xl tracking-wide font-bold text-premiumGold">R K TRADERS</a>
+                <p class="text-xs uppercase tracking-widest text-gray-400 mt-0.5">Electricals & Appliances</p>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-medium tracking-wide uppercase">
+                <a href="#home" class="hover:text-premiumGold transition-colors">Home</a>
+                <a href="#about" class="hover:text-premiumGold transition-colors">Our Legacy</a>
+                <a href="#catalogue" class="hover:text-premiumGold transition-colors">Catalogue</a>
+                <a href="#quote-section" class="hover:text-premiumGold transition-colors flex items-center gap-2">
+                    <i class="fa-solid fa-file-invoice"></i> Quote Basket <span id="cart-count" class="bg-premiumGold text-premiumNavy px-2 py-0.5 rounded-full text-xs">0</span>
+                </a>
+            </nav>
+            <div class="text-right hidden sm:block">
+                <p class="text-xs text-gray-400 uppercase tracking-wider">Est. 1965</p>
+                <p class="text-sm font-semibold text-premiumGold">RK Complex, Fort Road</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-premiumNavy text-white py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#d4af37_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6">
+                <span class="inline-block border border-premiumGold text-premiumGold px-3 py-1 text-xs uppercase tracking-widest font-semibold rounded-sm">
+                    Traditional Family Business &bull; Over 60 Years of Trust
+                </span>
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl leading-tight">
+                    Elegant Engineering. <br><span class="italic text-premiumGold">Rich Expertise.</span>
+                </h1>
+                <p class="text-gray-300 text-lg max-w-xl leading-relaxed font-light">
+                    From heavy-duty industrial systems and complete commercial layouts to premium home lighting and sophisticated kitchen appliances, we deliver unmatched quality backed by a six-decade legacy.
+                </p>
+                <div class="pt-4 flex flex-wrap gap-4">
+                    <a href="#catalogue" class="gold-gradient text-premiumNavy px-8 py-3 rounded font-semibold text-sm uppercase tracking-wider shadow-lg hover:brightness-110 transition-all">
+                        Explore Catalogue
+                    </a>
+                    <a href="#quote-section" class="border border-gray-400 hover:border-premiumGold text-white px-8 py-3 rounded font-semibold text-sm uppercase tracking-wider transition-all">
+                        View Quotation
+                    </a>
+                </div>
+            </div>
+            <div class="hidden md:grid grid-cols-2 gap-4">
+                <div class="bg-gray-800 h-64 rounded-lg bg-cover bg-center shadow-2xl border border-gray-700" style="background-image: url('https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="bg-gray-800 h-64 rounded-lg mt-8 bg-cover bg-center shadow-2xl border border-gray-700" style="background-image: url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=600');"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Segments Section -->
+    <section class="py-20 bg-softGray">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="font-serif text-3xl sm:text-4xl text-premiumNavy">Comprehensive Electrical Segments</h2>
+                <div class="w-16 h-0.5 bg-premiumGold mx-auto mt-4"></div>
+                <p class="text-gray-500 mt-4 font-light">Engineered solutions curated for efficiency, architectural elegance, and long-term durability.</p>
+            </div>
+            
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Residential -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="text-premiumGold text-3xl mb-4"><i class="fa-solid fa-house-chimney"></i></div>
+                    <h3 class="font-serif text-xl text-premiumNavy mb-2">Residential</h3>
+                    <p class="text-sm text-gray-500 font-light">Modular switches, elegant LED lighting, house wires, distribution boards, and stylish ceiling fans.</p>
+                </div>
+                <!-- Commercial -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="text-premiumGold text-3xl mb-4"><i class="fa-solid fa-building"></i></div>
+                    <h3 class="font-serif text-xl text-premiumNavy mb-2">Commercial</h3>
+                    <p class="text-sm text-gray-500 font-light">Architectural panel lights, heavy-duty stabilizers, multi-core cables, and robust backup power systems.</p>
+                </div>
+                <!-- Industrial -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="text-premiumGold text-3xl mb-4"><i class="fa-solid fa-industry"></i></div>
+                    <h3 class="font-serif text-xl text-premiumNavy mb-2">Industrial</h3>
+                    <p class="text-sm text-gray-500 font-light">Submersible pumps, armored underground cables, industrial switchgears, and robust safety gear.</p>
+                </div>
+                <!-- Home & Kitchen -->
+                <div class="bg-white p-8 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
+                    <div class="text-premiumGold text-3xl mb-4"><i class="fa-solid fa-kitchen-set"></i></div>
+                    <h3 class="font-serif text-xl text-premiumNavy mb-2">Home & Kitchen</h3>
+                    <p class="text-sm text-gray-500 font-light">Premium kitchen appliances, water heaters, air coolers, and everyday utility devices built to last.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy / About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h2 class="font-serif text-3xl sm:text-4xl text-premiumNavy">A Rich Legacy Built on Trust & Transparency</h2>
+                <div class="w-16 h-0.5 bg-premiumGold"></div>
+                <p class="text-gray-600 leading-relaxed font-light">
+                    Established in 1965, R K Traders has grown from a humble regional store to Kalaburagi’s benchmark for wholesale and retail electrical solutions. We manage our operations with a strict focus on authenticity, ensuring all supplies strictly adhere to high safety compliance and GST standard formats. 
+                </p>
+                <blockquote class="border-l-4 border-premiumGold pl-4 italic text-gray-600 font-serif my-4">
+                    "We don't just supply products; we build electrical infrastructures that power local communities and businesses securely."
+                </blockquote>
+            </div>
+            <div class="bg-premiumNavy text-white p-10 rounded-lg shadow-xl border border-gray-800 relative">
+                <h3 class="font-serif text-2xl text-premiumGold mb-6">Our Operations & Address</h3>
+                <div class="space-y-4 text-sm tracking-wide">
+                    <div class="flex items-start gap-4">
+                        <i class="fa-solid fa-location-dot text-premiumGold mt-1"></i>
+                        <div>
+                            <p class="font-semibold text-base">R K Traders</p>
+                            <p class="text-gray-400 font-light">RK Complex, Fort Road,<br>Kalaburagi (Gulbarga), Karnataka</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-envelope text-premiumGold"></i>
+                        <p class="text-gray-400 font-light">contact@rktraders.com</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fa-solid fa-phone text-premiumGold"></i>
+                        <p class="text-gray-400 font-light">+91 94xxx xxxxx (JK / RK / SK)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Catalogue & Quote Feature -->
+    <section id="catalogue" class="py-20 bg-softGray">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="font-serif text-3xl sm:text-4xl text-premiumNavy">Product Catalogue</h2>
+                <p class="text-gray-500 mt-2 font-light">Select items below to effortlessly build your quotation request list.</p>
+            </div>
+
+            <!-- Product Grid Layout -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-premiumGold uppercase tracking-wider block mb-1">Residential</span>
+                        <h3 class="font-serif text-lg text-premiumNavy mb-2">Premium Modular Switches & Plates</h3>
+                        <p class="text-xs text-gray-500 font-light line-clamp-2">Smooth operation, classy aesthetic designs, flame-retardant polycarbonate bodies.</p>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-400 uppercase">Wholesale & Retail</span>
+                        <button onclick="addToQuote('Premium Modular Switches')" class="text-xs uppercase tracking-wider border border-premiumNavy px-4 py-2 rounded font-medium hover:bg-premiumNavy hover:text-white transition-all">
+                            + Add to Estimate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-premiumGold uppercase tracking-wider block mb-1">Commercial / Lighting</span>
+                        <h3 class="font-serif text-lg text-premiumNavy mb-2">High-Efficiency LED Tube Lights & Panels</h3>
+                        <p class="text-xs text-gray-500 font-light line-clamp-2">Maximum lumens output with minimum energy draw. Excellent color rendering index.</p>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-400 uppercase">Surya / Premium Brands</span>
+                        <button onclick="addToQuote('LED Panels & Tube Lights')" class="text-xs uppercase tracking-wider border border-premiumNavy px-4 py-2 rounded font-medium hover:bg-premiumNavy hover:text-white transition-all">
+                            + Add to Estimate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-premiumGold uppercase tracking-wider block mb-1">Industrial</span>
+                        <h3 class="font-serif text-lg text-premiumNavy mb-2">Heavy Duty V-Guard Submersible Pumps</h3>
+                        <p class="text-xs text-gray-500 font-light line-clamp-2">Designed for agricultural and high-discharge industrial fluid handling. Highly robust.</p>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-400 uppercase">Heavy Duty</span>
+                        <button onclick="addToQuote('V-Guard Submersible Pump')" class="text-xs uppercase tracking-wider border border-premiumNavy px-4 py-2 rounded font-medium hover:bg-premiumNavy hover:text-white transition-all">
+                            + Add to Estimate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-premiumGold uppercase tracking-wider block mb-1">Cables & Wires</span>
+                        <h3 class="font-serif text-lg text-premiumNavy mb-2">FR-LSH Multicore Cables</h3>
+                        <p class="text-xs text-gray-500 font-light line-clamp-2">Flame Retardant Low Smoke & Halogen wires for premium domestic and safety industrial setups.</p>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-400 uppercase">ISI Certified</span>
+                        <button onclick="addToQuote('FR-LSH Multicore Wires')" class="text-xs uppercase tracking-wider border border-premiumNavy px-4 py-2 rounded font-medium hover:bg-premiumNavy hover:text-white transition-all">
+                            + Add to Estimate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-premiumGold uppercase tracking-wider block mb-1">Home & Kitchen</span>
+                        <h3 class="font-serif text-lg text-premiumNavy mb-2">Premium Kitchen Appliances & Heaters</h3>
+                        <p class="text-xs text-gray-500 font-light line-clamp-2">Mixer grinders, induction cooktops, and rapid water heating solutions for modern spaces.</p>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-400 uppercase">Elegant Utility</span>
+                        <button onclick="addToQuote('Premium Kitchen Appliances')" class="text-xs uppercase tracking-wider border border-premiumNavy px-4 py-2 rounded font-medium hover:bg-premiumNavy hover:text-white transition-all">
+                            + Add to Estimate
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 flex flex-col justify-between">
+                    <div>
+                        <span class="text-xs font-semibold text-premiumGold uppercase tracking-wider block mb-1">Power Control</span>
+                        <h3 class="font-serif text-lg text-premiumNavy mb-2">Digital Voltage Stabilizers</h3>
+                        <p class="text-xs text-gray-500 font-light line-clamp-2">Advanced micro-controlled stabilizers ensuring safety for high-end appliances and equipment.</p>
+                    </div>
+                    <div class="mt-6 flex items-center justify-between">
+                        <span class="text-xs font-semibold text-gray-400 uppercase">Automated Protection</span>
+                        <button onclick="addToQuote('Digital Voltage Stabilizer')" class="text-xs uppercase tracking-wider border border-premiumNavy px-4 py-2 rounded font-medium hover:bg-premiumNavy hover:text-white transition-all">
+                            + Add to Estimate
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dynamic Quotation Generation Module -->
+            <div id="quote-section" class="mt-16 bg-white border border-gray-200 rounded-lg p-8 shadow-md max-w-3xl mx-auto">
+                <div class="flex items-center gap-3 border-b border-gray-100 pb-4 mb-6">
+                    <div class="text-premiumGold text-2xl"><i class="fa-solid fa-receipt"></i></div>
+                    <h3 class="font-serif text-2xl text-premiumNavy">Your Selected Estimate Items</h3>
+                </div>
+                
+                <div id="quote-basket-empty" class="text-gray-400 text-sm font-light text-center py-6">
+                    Your quotation basket is currently empty. Click "+ Add to Estimate" above to begin.
+                </div>
+                
+                <ul id="quote-list" class="space-y-3 mb-6 divide-y divide-gray-50"></ul>
+
+                <form id="quote-form" onsubmit="submitQuoteForm(event)" class="space-y-4 pt-4 border-t border-gray-100 hidden">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 font-medium mb-1">Full Name *</label>
+                            <input type="text" required class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-premiumGold">
+                        </div>
+                        <div>
+                            <label class="block text-xs uppercase tracking-wider text-gray-500 font-medium mb-1">Contact Number *</label>
+                            <input type="tel" required class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-premiumGold">
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-gray-500 font-medium mb-1">Business / Project Delivery Notes (Optional)</label>
+                        <textarea rows="3" class="w-full border border-gray-300 rounded p-2.5 text-sm focus:outline-none focus:border-premiumGold" placeholder="e.g., Delivery required at location site in Kalaburagi..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full gold-gradient text-premiumNavy font-semibold text-center py-3 rounded text-sm uppercase tracking-wider hover:brightness-110 transition-all">
+                        Request Official GST Quotation
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Footer -->
+    <footer class="bg-premiumNavy text-gray-400 py-12 text-sm border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div>
+                <h4 class="font-serif text-white text-lg tracking-wide mb-3">R K TRADERS</h4>
+                <p class="font-light text-xs text-gray-400 leading-relaxed">
+                    Premium and traditional multi-generational family supplier of residential, commercial, industrial electrical apparatus, and smart utility home appliances.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-serif text-white text-lg tracking-wide mb-3">Compliance & Standards</h4>
+                <p class="font-light text-xs text-gray-400 leading-relaxed">
+                    All transactions are systematically audited against statutory CGST and SGST rules. Official billing records are delivered seamlessly upon item dispatch.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-serif text-white text-lg tracking-wide mb-3">Management Contacts</h4>
+                <p class="font-light text-xs text-gray-400">
+                    Operations supervised by: <br>
+                    <span class="text-premiumGold font-medium">JK &bull; RK &bull; SK</span><br>
+                    RK Complex, Fort Road, Kalaburagi.
+                </p>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 mt-8 pt-8 border-t border-gray-800 text-center text-xs text-gray-500">
+            &copy; 2026 R K Traders. All Rights Reserved. Est. 1965.
+        </div>
+    </footer>
+
+    <!-- Interactive Cart / Basket Logic -->
+    <script>
+        let quoteBasket = [];
+
+        function updateUI() {
+            const listElement = document.getElementById('quote-list');
+            const emptyNotice = document.getElementById('quote-basket-empty');
+            const formElement = document.getElementById('quote-form');
+            const counterElement = document.getElementById('cart-count');
+
+            counterElement.innerText = quoteBasket.length;
+
+            if (quoteBasket.length === 0) {
+                emptyNotice.classList.remove('hidden');
+                formElement.classList.add('hidden');
+                listElement.innerHTML = '';
+                return;
+            }
+
+            emptyNotice.classList.add('hidden');
+            formElement.classList.remove('hidden');
+
+            listElement.innerHTML = quoteBasket.map((item, index) => `
+                <li class="flex items-center justify-between py-3 text-sm">
+                    <span class="font-medium text-premiumNavy">${item.name}</span>
+                    <div class="flex items-center gap-4">
+                        <div class="flex items-center border border-gray-200 rounded">
+                            <button onclick="changeQty(${index}, -1)" class="px-2 py-1 text-gray-500 hover:bg-gray-100">-</button>
+                            <span class="px-3 font-semibold text-xs">${item.qty}</span>
+                            <button onclick="changeQty(${index}, 1)" class="px-2 py-1 text-gray-500 hover:bg-gray-100">+</button>
+                        </div>
+                        <button onclick="removeItem(${index})" class="text-red-500 hover:text-red-700 text-xs uppercase tracking-wider font-semibold">Remove</button>
+                    </div>
+                </li>
+            `).join('');
+        }
+
+        function addToQuote(itemName) {
+            const existingIndex = quoteBasket.findIndex(item => item.name === itemName);
+            if (existingIndex > -1) {
+                quoteBasket[existingIndex].qty += 1;
+            } else {
+                quoteBasket.push({ name: itemName, qty: 1 });
+            }
+            updateUI();
+            
+            // Auto smooth scroll to quote summary window for dynamic elegant feedback
+            document.getElementById('quote-section').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function changeQty(index, change) {
+            quoteBasket[index].qty += change;
+            if (quoteBasket[index].qty <= 0) {
+                quoteBasket.splice(index, 1);
+            }
+            updateUI();
+        }
+
+        function removeItem(index) {
+            quoteBasket.splice(index, 1);
+            updateUI();
+        }
+
+        function submitQuoteForm(event) {
+            event.preventDefault();
+            alert("Thank you! Your quote request has been saved securely. Our sales representatives will map the pricing specs and forward your official PDF layout immediately.");
+            quoteBasket = [];
+            updateUI();
+            event.target.reset();
+        }
+    </script>
+</body>
+</html>
